@@ -1,14 +1,14 @@
 pipeline {
   environment {
-    registry = '<dockerhubusername>/<imagename>'
-    registryCredential = '<credsidfromjenkins>'
-    dockerImage = ''
+    registry = 'mstarin1010/final-project'
+    registryCredential = 'dockerid'
+    dockerImage = 'mstarin1010/final-project'
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/SimplilearnDevOpsOfficial/DockerizeJenkins.git'
+        git 'https://github.com/mstarin1010/final.git'
       }
     }
     stage('Building image') {
