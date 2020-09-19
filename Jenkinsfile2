@@ -1,11 +1,11 @@
 pipeline {
   environment {
-    registry = 'mstarin1010/final-project'
+    registry = 'mstarin1010/final-2020'
     registryCredential = 'dockerid'
     dockerImage = ''
   }
   agent any
-  tools {nodejs '<nodeversionfromjenkins>' }
+  tools {nodejs }
   stages {
     stage('Cloning Git') {
       steps {
