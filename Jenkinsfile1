@@ -1,8 +1,8 @@
 pipeline {
   environment {
-    registry = 'mstarin1010/final-project'
+    registry = 'mstarin1010/final-1'
     registryCredential = 'dockerid'
-    dockerImage = 'mstarin1010/final-project'
+    dockerImage = 'mstarin1010/final-1'
   }
   agent any
   stages {
