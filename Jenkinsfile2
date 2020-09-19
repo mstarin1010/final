@@ -1,8 +1,8 @@
 pipeline {
   environment {
-    registry = 'mstarin1010/final-2020'
+    registry = 'mstarin1010/final-2'
     registryCredential = 'dockerid'
-    dockerImage = ''
+    dockerImage = 'mstarin1010/final-2
   }
   agent any
   tools {nodejs 'nodev1' }
